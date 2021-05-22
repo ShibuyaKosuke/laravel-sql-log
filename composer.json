@@ -1,0 +1,28 @@
+{
+    "name": "shibuyakosuke/laravel-sql-log",
+    "description": "Logging SQL for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ShibuyaKosuke",
+            "email": "shibuya@imagenious.co.jp"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ShibuyaKosuke\\LaravelSqlLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ShibuyaKosuke\\LaravelSqlLog\\Providers\\DataBaseQueryServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "laravel/framework": "^6.0 | ^7.0 | ^8.0",
+    }
+}
